@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ทักษะพื้นฐานการเล่นแฮนด์บอล | PE Project</title>
+  <meta name="description" content="เว็บไซต์สรุปเนื้อหาทักษะพื้นฐานการเล่นแฮนด์บอล เหมาะสำหรับนักเรียนรายวิชาพลศึกษา" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="ไปยังหน้าแรก">HANDBALL HUB</a>
+      <button class="nav-toggle" aria-label="สลับเมนู" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a href="#overview">ภาพรวมกีฬาแฮนด์บอล</a></li>
+        <li><a href="#rules">กติกา & สนาม</a></li>
+        <li><a href="#skills">ทักษะพื้นฐาน</a></li>
+        <li><a href="#resources">รายชื่อสมาชิกผู้จัดทำ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>ทักษะพื้นฐานการเล่นแฮนด์บอล</h1>
+          <p class="lead">สรุปเนื้อหาทักษะการเล่นกีฬาแฮนด์บอลสำหรับใช้อ่านประกอบการเรียนและการสอนในวิชาพลศึกษา</p>
+        </div>
+        <div class="court-card" aria-label="ภาพสนามแฮนด์บอลแบบสเก็ตช์">
+          <!-- Inline SVG court (เรียบง่าย/สัดส่วนใกล้เคียงจริง) -->
+          <svg viewBox="0 0 1000 600" role="img" aria-labelledby="courtTitle">
+            <title id="courtTitle">ผังสนามแฮนด์บอล</title>
+            <rect x="20" y="20" width="960" height="560" rx="16" class="court"/>
+            <!-- Mid line -->
+            <line x1="500" y1="20" x2="500" y2="580" class="line"/>
+            <!-- Goals -->
+            <rect x="10" y="250" width="10" height="100" class="goal"/>
+            <rect x="980" y="250" width="10" height="100" class="goal"/>
+            <!-- 6m arcs (สมมุติเป็นเส้นประ) -->
+            <path d="M180,300 a320,320 0 0,1 640,0" class="arc dashed"/>
+            <path d="M820,300 a320,320 0 0,1 -640,0" class="arc dashed"/>
+            <!-- 7m dots -->
+            <circle cx="140" cy="300" r="4" class="dot"/>
+            <circle cx="860" cy="300" r="4" class="dot"/>
+            <!-- Labels -->
+            <text x="80" y="60" class="label">โกล (Goal)</text>
+            <text x="430" y="60" class="label">เส้นกลางสนาม</text>
+            <text x="770" y="60" class="label">เขตประตู 6 ม.</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section container">
+      <h2>ภาพรวม</h2>
+      <p>แฮนด์บอล (Handball) เป็นกีฬาทีม 7 คน ที่ผสมความเร็ว ความแข็งแรง และการประสานงาน เป้าหมายคือขว้างลูกบอลเข้า <strong>ประตูฝ่ายตรงข้าม</strong> โดยหลีกเลี่ยงการละเมิดกติกา เช่น เดินเกิน 3 ก้าวโดยไม่เลี้ยงบอล หรือถือบอลเกิน 3 วินาทีโดยไม่ส่ง/เลี้ยง/ยิง</p>
+      <div class="overview-grid">
+        <article class="card">
+          <h3>จุดมุ่งหมาย</h3>
+          <p>ทำประตูให้ได้มากกว่าอีกทีม ภายในเวลาการแข่งขัน (ปกติ 2 ครึ่งๆ ละ 30 นาที สำหรับรุ่นทั่วไป)</p>
+        </article>
+        <article class="card">
+          <h3>ผู้เล่น</h3>
+          <p>ทีมละ 7 คน: ผู้รักษาประตู 1 + ผู้เล่นสนาม 6 (ตำแหน่งหลัก: ปีกซ้าย/ขวา, พิวอต, แบ็คซ้าย/ขวา, เซ็นเตอร์)</p>
+        </article>
+        <article class="card">
+          <h3>เครื่องแต่งกาย</h3>
+          <p>รองเท้าพื้นยางเกาะพื้นดี ชุดกีฬา ระบายอากาศ และสนับศอก/เข่าตามความเหมาะสม</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="rules" class="section container">
+      <h2>กติกา & สนาม</h2>
+      <details class="card" open>
+        <summary>กติกาพื้นฐานที่ต้องรู้</summary>
+        <ul class="checklist">
+          <li><strong>3 ก้าว / 3 วินาที</strong>: ถือบอลได้ไม่เกิน 3 วินาที และเดิน/วิ่งได้ไม่เกิน 3 ก้าวก่อนต้องส่ง เลี้ยง หรือยิง</li>
+          <li><strong>เลี้ยงบอล (Dribble)</strong>: ใช้มือเดียวเด้งบอลกับพื้น ถ้าจับขึ้นมาแล้วห้ามเลี้ยงต่อ (Double dribble)</li>
+          <li><strong>เขตประตู 6 ม.</strong>: ผู้เล่นสนามห้ามยืนในเขตนี้ (ยกเว้นขณะลอยตัวยิงโดยไม่สัมผัสพื้น)</li>
+          <li><strong>การประกบ</strong>: ใช้ลำตัวป้องกันได้ ห้ามดึง/ผลัก/ตีแขน</li>
+          <li><strong>โยนโทษ 7 ม.</strong>: ทำฟาวล์รุนแรงในจังหวะทำประตูจะได้ยิงโทษจากจุด 7 เมตร</li>
+        </ul>
+      </details>
+
+
+    <section id="skills" class="section container">
+      <h2>ทักษะพื้นฐาน</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <img src="p1.jpg" alt="ภาพประกอบทักษะที่ 1 การส่งบอล (Passing)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>1) การส่งบอล (Passing)</h3>
+          <ul>
+            <li>ส่งอก (Chest pass) – เร็วและแม่นในระยะกลาง</li>
+            <li>ส่งสะบัดข้อมือ (Wrist/Overhead) – เปลี่ยนมุม/ฝ่าบล็อก</li>
+            <li>หลัก: ยืนบาลานซ์ ไหล่หันเป้า น้ำหนักถ่ายจากขาหลัง→หน้า สบัดข้อมือให้ปลายลูกหมุน</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="p2.jpg" alt="ภาพประกอบทักษะที่ 2 การรับบอล (Catching)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>2) การรับบอล (Catching)</h3>
+          <ul>
+            <li>สองมือรูปถ้วย นิ้วกางรับแรง</li>
+            <li>ตาโฟกัสด้านหน้าลูก ดึงบอลเข้าหาลำตัวเพื่อลดแรง</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="p3.webp" alt="ภาพประกอบทักษะที่ 3 การเลี้ยงบอล (Dribbling)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>3) การเลี้ยงบอล (Dribbling)</h3>
+          <ul>
+            <li>ให้บอลเด้งถึงระดับเอว-สะโพก ระวัง Double dribble</li>
+            <li>ใช้มือถนัดคุม ท่าต่ำเมื่อถูกกดดัน</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="p4.jpg" alt="ภาพประกอบทักษะที่ 4 การยิงประตู (Shooting)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>4) การยิงประตู (Shooting)</h3>
+          <ul>
+            <li>ไหล่ข้างแขนขว้างหันสู่เป้า ศอกสูงกว่าหัวไหล่</li>
+            <li>ก้าวขาเล็ง (opposite foot) สบัดข้อมือ <em>ลง</em> เพื่อให้ลูกต่ำหลังขว้าง</li>
+            <li>ซ้อมมุมต่ำ-เสาไกล-ใต้ศอกผู้รักษา</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="p5.jpg" alt="ภาพประกอบทักษะที่ 5 เกมรับ (Defending)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>5) เกมรับ (Defending)</h3>
+          <ul>
+            <li>ยืนกว้าง เข่าพับ น้ำหนักปลายเท้า แขนกางบังทาง</li>
+            <li>เคลื่อนข้าง (shuffle) ใช้ลำตัวชนถูกต้อง ไม่ฟาดแขน</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="p6.jpg" alt="ภาพประกอบทักษะที่ 6 ผู้รักษาประตู (Goalkeeping)" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3>6) ผู้รักษาประตู (Goalkeeping)</h3>
+          <ul>
+            <li>ยืนกลางประตู มือ-เท้าเปิดกว้าง ปิดมุมตามลูกบอล</li>
+            <li>อ่านไหล่/ข้อมือผู้ยิง ชูกำแพงเมื่อบล็อกต่ำ</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="section container">
+      <h2>รายชื่อสมาชิกผู้จัดทำ</h2>
+      <ul class="refs">
+        <li>นายก้องภพ แซ่โง้ว เลขที่ 1 ม.6/4</li>
+        <li>นายชวนากร รอดพาที เลขที่ 3 ม.6/4</li>
+        <li>นายณัฐวีร์ สงวนประเสริฐ เลขที่ 4 ม.6/4</li>
+        <li>นายภาสกร ตั้งบุณยเกียรติ เลขที่ 7 ม.6/4</li>
+        <li>นายศรัณย์ พิทักษ์รณชัย เลขที่ 9 ม.6/4</li>
+        <li>นายวีรวิชญ์ พรเศรษฐรัตน์ เลขที่ 13 ม.6/4</li>
+      </ul>
+      <p class="muted">นำเสนอ คุณครูรัฐพงศ์ รายวิชา สุขศึกษาและพลศึกษา รหัสวิชา พ33101</p>
+    </section>
+  </main>
+
+  <!-- script.js ยังสามารถใช้ได้ (เมนูมือถือ ฯลฯ); ส่วนฟีเจอร์ที่ถูกลบจะไม่ถูกเรียกใช้ -->
+  <script src="script.js"></script>
+</body>
+</html>
